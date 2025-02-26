@@ -34,13 +34,13 @@
 
         <div class="cards w-11/12 mx-auto grid grid-cols-3 gap-4">
           <!-- 1-->
-          <div class="box rounded-xl p-4 border border-slate-400">
+          <div id="add-money-box" class="box rounded-xl p-4 border border-slate-400 cursor-pointer">
             <img class="w-7 mx-auto" src="./assets/wallet1.png" alt="">
             <h3 class="text-center">Add Money</h3>
           </div>
           <!-- 1 end -->
           <!-- 2 -->
-          <div class="box rounded-xl p-4 border border-slate-400">
+          <div id="cash-out-box" class="box rounded-xl p-4 border border-slate-400 cursor-pointer">
             <img class="w-7 mx-auto" src="./assets/send1.png" alt="">
             <h3 class="text-center">Cash Out</h3>
           </div>
@@ -72,7 +72,7 @@
 
         </div>
 
-        <section class="w-11/12 mx-auto my-14">
+        <section id="add-money" class="w-11/12 mx-auto my-14">
           <h2 class="text-2xl font-bold">Add Money</h2>
           <div class=" bg-gray-200 ">
             <div class="mt-6 flex-col lg:flex-row-reverse">
@@ -119,12 +119,65 @@
             </div>
           </div>
         </section>
+
+        <section id="cash-out" class="w-11/12 mx-auto my-14">
+          <h2 class="text-2xl font-bold">Cash Out</h2>
+          <div class=" bg-gray-200 ">
+            <div class="mt-6 flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full shadow-2xl">
+                <form class="card-body">
+                  <legend>Select Bank</legend>
+                  <select class="select select-bordered w-full ">
+                    <option disabled selected>Select Bank</option>
+                    <option value="Bkash">Bkash</option>
+                    <option value="Nagod">Nagod</option>
+                    <option value="Rocket">Rocket</option>
+                    <option value="Upay">Upay</option>
+                    <option value="DBBL">DBBL</option>
+                  </select>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Account Number</span>
+                    </label>
+                    <input value="20930218234" id="account-number" type="number" placeholder="Type Your Number"
+                      class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount </span>
+                    </label>
+                    <input id="cashOut-Amount" type="number" placeholder="Type Your Amount" class="input input-bordered"
+                      required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">PIN</span>
+                    </label>
+                    <input value="1234" id="cash-out-pin" type="text" placeholder="Type your PIN"
+                      class="input input-bordered" required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="cashOutBtn" class="btn btn-primary">Cash Out</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
       </section>
     </header>
   </section>
 
-  <!-- <script src="./script/recape.js"></script> -->
-  <script src="./script/add-money.js"></script>
+  <script src="./script/recape.js"></script>
+  <!-- <script src="./script/add-money.js"></script> -->
+  <script src="./script/toggle.js"></script>
+  <script src="./script/cash-out.js"></script>
 </body>
 
 </html>
