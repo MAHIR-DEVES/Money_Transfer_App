@@ -1,5 +1,5 @@
 document
-  .getElementById('add-money')
+  .getElementById('add-money-btn')
   .addEventListener('click', function (event) {
     event.preventDefault();
     const acountNmber = document.getElementById('account-number').value;
