@@ -64,7 +64,7 @@
           </div>
           <!-- 5 end -->
           <!-- 6-->
-          <div class="box rounded-xl p-4 border border-slate-400">
+          <div id="transaction-box" class="box rounded-xl p-4 border border-slate-400 cursor-pointer">
             <img class="w-7 mx-auto" src="./assets/transaction1.png" alt="">
             <h3 class="text-center">Transactions</h3>
           </div>
@@ -112,7 +112,7 @@
                     </label>
                   </div>
                   <div class="form-control mt-6">
-                    <button id="add-money-btn" class="btn btn-primary " type="submit">Add Money </button>
+                    <button id="add-money-btn" class="btn btn-primary ">Add Money </button>
                   </div>
                 </div>
               </div>
@@ -127,7 +127,7 @@
               <div class="card bg-base-100 w-full shadow-2xl">
                 <form class="card-body">
                   <legend>Select Bank</legend>
-                  <select class="select select-bordered w-full ">
+                  <select value="" id="allBank" class="select select-bordered w-full ">
                     <option disabled selected>Select Bank</option>
                     <option value="Bkash">Bkash</option>
                     <option value="Nagod">Nagod</option>
@@ -169,21 +169,40 @@
 
         </section>
 
+        <section id="transaction-history">
+          <div class="w-11/12 mx-auto my-14">
+            <h2 class="text-2xl font-bold text-red-500 text-center">Transaction history</h2>
+            <div id="treansetion-container">
+
+            </div>
+
+          </div>
+        </section>
+
 
       </section>
     </header>
   </section>
 
 
+  <!-- script 3 -->
+  <script src="./utletis/toggle.js"></script>
+  <script src="./utletis/utlites.js"></script>
+  <script src="./script-3/addmoney.js"></script>
+  <script src="./script-3/cashout.js"></script>
+  <script src="./script-3/transaction.js"></script>
 
-  <script src="./script-2/toggle.js"></script>
-  <script src="./script-2/addmoney.js"></script>
+
+  <!-- script 2 -->
+  <!-- <script src="./script-2/toggle.js"></script> -->
+  <!-- <script src="./script-2/addmoney.js"></script> -->
 
 
+  <!-- script 1-->
   <!-- <script src="./script/recape.js"></script>
   <script src="./script/add-money.js"></script>
   <script src="./script/toggle.js"></script> -->
-  <script src="./script/cash-out.js"></script>
+  <!-- <script src="./script/cash-out.js"></script> -->
 </body>
 
 </html>
