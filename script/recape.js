@@ -18,6 +18,6 @@ document
         alert('inter valid pin');
       }
     } else {
-      // alert('enter amount');
+      alert('enter amount');
     }
   });
