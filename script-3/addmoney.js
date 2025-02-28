@@ -1,3 +1,16 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const selectBank = document.getElementById('allBank');
+
+  selectBank.addEventListener('onChange', function () {
+    let selectedBank = selectBank.value;
+    console.log('Selected Bank:', selectedBank);
+  });
+
+  // Debugging: Check if the element exists
+  if (!selectBank) {
+    console.error("Error: Element with ID 'allBank' not found!");
+  }
+});
 document
   .getElementById('add-money-btn')
   .addEventListener('click', function (event) {
@@ -6,9 +19,6 @@ document
     const pin = getInputValueById('pin');
     const acount = document.getElementById('account-number').value;
     const mainBlance = getInerTextById('main-blasnce');
-
-    const selacetBank = document.getElementById('allBank').value;
-    console.log(selacetBank);
 
     if (amount < 0) {
       alert('Goribs 🤣');
